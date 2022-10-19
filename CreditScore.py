@@ -13,7 +13,7 @@ st.sidebar.subheader('Insira seus dados abaixo e descubra sua pontuação.')
 divida = st.sidebar.slider("Qual é a sua dívida?", 0,10000, step = 250)/2
 salario_mensal = st.sidebar.slider("Qual o seu salário mensal?", 0,25000, step = 500)/2
 investimento = st.sidebar.slider("Quanto você investe mensalmente?", 0,1000, step = 50)/2
-tempo_cartao = st.sidebar.slider("Quantos anos você possui o cartão?", 0,25)*12
+tempo_cartao = st.sidebar.slider("Quantos anos você possui o cartão?", 1,25)*12
 fatura = st.sidebar.radio('Você paga a fatura do cartão em dia?',('sim','não'))
 
 if fatura == 'sim':
