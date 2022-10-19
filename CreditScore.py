@@ -35,7 +35,7 @@ col = ['Outstanding_Debt','Monthly_Inhand_Salary','Credit_History_age','Amount_i
 dados_deploy = pd.DataFrame(dados_dict,columns=col,index = [0])
 
 if st.button('Classifique seu Credit Score'):
-   pickle_model_xgb = pickle.load(open('Code\modelostreamlit.pkl', 'rb'))
+   pickle_model_xgb = pickle.load(open(r'https://github.com/rguto11/ProjetoFinal/blob/main/Code/modelostreamlit.pkl', 'rb'))
    cs = pickle_model_xgb.predict(dados_deploy)
    if cs == [0]:
       cs = 'Bom'
